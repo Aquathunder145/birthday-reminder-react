@@ -1,13 +1,91 @@
+
 body {
+  background-color: rgb(252, 253, 255); 
+  background-size: auto;
+  font-family: Arial, sans-serif;
+  color: #333;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+  /* min-height: 100vh; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Container for the cards */
+.card-container {
+  background-color: #9bd5c4;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding to the container */
+  width: 80%; /* Adjust the container width as needed */
+  text-align: center; /* Center text within the container */
+  display: flex;
+  flex-direction: column; /* Display cards vertically */
+  align-items: center; /* Center-align cards horizontally */
+}
+
+/* Style each person's card (updated for vertical layout) */
+.person-card {
+  background-color: #ebf4f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0; /* Add margin to create space between cards */
+  padding: 15px;
+  text-align: center; /* Center text within the cards */
+  width: 100%; /* Full width for vertical layout */
+}
+
+/* Style the content within each card (unchanged) */
+.person-card-content {
+  display: flex;
+  align-items: center; /* Center content horizontally */
+}
+
+/* Style the person's image within the card (unchanged) */
+.person-card-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style the person's information within the card (unchanged) */
+.person-info {
+  flex-grow: 1;
+  text-align: left; /* Align text to the left */
+  margin-left: 100px; /* Add a left margin of 100px */
+
+}
+
+/* Style the "Remove" button within the card (unchanged) */
+.remove-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+/* Style the "Clear All" button */
+.clear-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Adjust the padding as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; 
+  align: center;/* Add margin to create space between button and cards */
+}
+
+.clear-button:hover {
+  background-color: #c0392b; /* Change this to your desired button color on hover */
 }
